@@ -60,10 +60,10 @@ ProfileXML element:
 ProfileXML elements:
 
 ```xml
-<DomainNameInformation>
+<DomainNameInformationList>
 <DomainName>.corp.contoso.com</DomainName>
 <DnsServers>10.10.1.10,10.10.1.50</DnsServers>
-</DomainNameInformation>
+</DomainNameInformationList>
 
 <DnsSuffix>corp.contoso.com</DnsSuffix>
 ```
@@ -303,10 +303,10 @@ $ProfileXML = @("
   <AlwaysOn>true</AlwaysOn>
   <RememberCredentials>true</RememberCredentials>
   <TrustedNetworkDetection>$TrustedNetwork</TrustedNetworkDetection>
-  <DomainNameInformation>
+  <DomainNameInformationList>
 <DomainName>$DomainName</DomainName>
 <DnsServers>$DNSServers</DnsServers>
-</DomainNameInformation>
+</DomainNameInformationList>
 </VPNProfile>
 ")
 ```
@@ -495,10 +495,10 @@ The following example script includes all of the code examples from previous sec
     <AlwaysOn>true</AlwaysOn>
     <RememberCredentials>true</RememberCredentials>
     <TrustedNetworkDetection>$TrustedNetwork</TrustedNetworkDetection>
-      <DomainNameInformation>
+      <DomainNameInformationList>
     <DomainName>$DomainName</DomainName>
     <DnsServers>$DNSServers</DnsServers>
-    </DomainNameInformation>
+    </DomainNameInformationList>
     </VPNProfile>
     ")
 
@@ -672,10 +672,10 @@ ProfileXML  : <VPNProfile><RememberCredentials>true</RememberCredentials>
   e xmlns="https://www.microsoft.com/provisioning/MsPeapConnec
   tionPropertiesV2">true</AcceptServerName></PeapExtensions><
   /EapType></Eap></Config></EapHostConfig></Configuration></E
-  ap></Authentication></NativeProfile><DomainNameInformation>
+  ap></Authentication></NativeProfile><DomainNameInformationList>
   <DomainName>corp.contoso.com</DomainName><DnsServers>10.10.
       0.2,10.10.0.3</DnsServers><AutoTrigger>true</AutoTrigger></
-  DomainNameInformation></VPNProfile>
+  DomainNameInformationList></VPNProfile>
 RememberCredentials : True
 TrustedNetworkDetection : corp.contoso.com
 PSComputerName  : WIN01
